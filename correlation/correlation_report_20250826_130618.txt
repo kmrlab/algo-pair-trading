@@ -1,0 +1,69 @@
+==========================================================================================
+ASSET CORRELATION ANALYSIS REPORT
+==========================================================================================
+Analysis date and time: 2025-08-26 13:09:20
+Data source: bybit_data
+Assets in analysis: BTC, ETH, XRP
+Analysis period: logarithmic returns (5-minute candles)
+
+CORRELATION ANALYSIS RESULTS
+------------------------------------------------------------------------------------------
+№   Pair         Correlation  |Corr|   30d avg  7d avg   1d avg   Stability      
+------------------------------------------------------------------------------------------
+1   BTC/ETH      +0.7525      0.7525   0.7632   0.7649   0.7717   stable         
+2   ETH/XRP      +0.5961      0.5961   0.6122   0.6242   0.6352   stable         
+3   BTC/XRP      +0.5632      0.5632   0.5909   0.6001   0.6155   moderate       
+
+==========================================================================================
+DETAILED ANALYSIS BY PAIRS
+==========================================================================================
+
+1. BTC/ETH
+   Correlation: +0.752520
+   Absolute correlation: 0.752520
+   30-day average correlation: +0.763235
+   7-day average correlation: +0.764880
+   1-day average correlation: +0.771687
+   Correlation stability: stable
+   Interpretation: Strong positive correlation, stability: stable. Ideal for pairs arbitrage
+
+2. ETH/XRP
+   Correlation: +0.596124
+   Absolute correlation: 0.596124
+   30-day average correlation: +0.612183
+   7-day average correlation: +0.624195
+   1-day average correlation: +0.635248
+   Correlation stability: stable
+   Interpretation: Moderate positive correlation, stability: stable. Good for arbitrage with caution
+
+3. BTC/XRP
+   Correlation: +0.563174
+   Absolute correlation: 0.563174
+   30-day average correlation: +0.590908
+   7-day average correlation: +0.600103
+   1-day average correlation: +0.615454
+   Correlation stability: moderate
+   Interpretation: Moderate positive correlation, stability: moderate. May be suitable for arbitrage but high risk
+
+==========================================================================================
+OVERALL STATISTICS AND CONCLUSIONS
+==========================================================================================
+Total assets: 3
+Total pairs analyzed: 3
+Strong positive correlation (> 0.7): 1
+Strong negative correlation (< -0.7): 0
+Moderate positive correlation (0.4 - 0.7): 2
+Moderate negative correlation (-0.7 - -0.4): 0
+Weak correlation (|r| < 0.4): 0
+
+BEST PAIR FOR PAIRS ARBITRAGE:
+Pair: BTC/ETH
+Correlation: +0.752520
+Stability: stable
+
+RECOMMENDATIONS FOR pt_new.md STRATEGY:
+--------------------------------------------------
+✅ Good pairs for pairs arbitrage (0.6 ≤ |r| ≤ 0.8, stable):
+   • BTC/ETH: r = +0.7525 (stable)
+
+Analysis completed: 2025-08-26 13:09:20

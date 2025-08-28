@@ -1,0 +1,72 @@
+================================================================================
+ASSET COINTEGRATION ANALYSIS REPORT
+================================================================================
+Analysis date and time: 2025-08-26 13:26:39
+Data source: bybit_data
+Assets in analysis: BTC, ETH, XRP
+
+COINTEGRATION ANALYSIS RESULTS
+--------------------------------------------------------------------------------
+№   Pair         Cointegr.  ADF p-val  R²       Hedge Ratio  LB p-val   Status      
+--------------------------------------------------------------------------------
+1   BTC/XRP      1.186      0.0298     0.777    0.33         0.0000     ✅ COINTEGR  
+2   ETH/XRP      0.009      0.4200     0.025    -0.05        0.0000     ❌ NOT COINT 
+3   BTC/ETH      0.003      0.4635     0.009    0.07         0.0000     ❌ NOT COINT 
+
+================================================================================
+DETAILED RESULTS BY PAIRS
+================================================================================
+
+1. BTC/XRP (BTC ~ XRP)
+   Cointegration score: 1.186002
+   ADF statistic: -3.058051
+   ADF p-value: 0.029817
+   R² of regression: 0.777436
+   Hedge ratio (β): 0.331640
+   Ljung-Box p-value: 0.000000
+   Maxlag used: 76
+   Cointegrated: Yes
+   Interpretation: Very weak cointegration, high risk for arbitrage (issues: residual autocorrelation)
+
+2. ETH/XRP (ETH ~ XRP)
+   Cointegration score: 0.009361
+   ADF statistic: -1.721669
+   ADF p-value: 0.419984
+   R² of regression: 0.024845
+   Hedge ratio (β): -0.047521
+   Ljung-Box p-value: 0.000000
+   Maxlag used: 76
+   Cointegrated: No
+   Interpretation: No cointegration detected, pair not suitable for arbitrage
+
+3. BTC/ETH (ETH ~ BTC)
+   Cointegration score: 0.002918
+   ADF statistic: -1.637698
+   ADF p-value: 0.463464
+   R² of regression: 0.008736
+   Hedge ratio (β): 0.074919
+   Ljung-Box p-value: 0.000000
+   Maxlag used: 76
+   Cointegrated: No
+   Interpretation: No cointegration detected, pair not suitable for arbitrage
+
+================================================================================
+OVERALL STATISTICS AND CONCLUSIONS
+================================================================================
+Total assets: 3
+Total pairs analyzed: 3
+Cointegrated pairs: 1
+Cointegration percentage: 33.3%
+
+BEST PAIR FOR ARBITRAGE:
+Pair: BTC/XRP
+Cointegration score: 1.186
+ADF p-value: 0.029817
+R²: 0.777
+Hedge ratio: 0.33
+
+RECOMMENDATIONS:
+----------------------------------------
+⚠️  No strongly cointegrated pairs found.
+
+Analysis completed: 2025-08-26 13:26:39

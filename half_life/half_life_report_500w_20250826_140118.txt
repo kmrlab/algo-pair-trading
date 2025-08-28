@@ -1,0 +1,41 @@
+================================================================================
+📊 BTC/XRP SPREAD HALF-LIFE ANALYSIS
+================================================================================
+Analysis date: 2025-08-26 14:01:18
+Rolling window: 500 observations
+
+📈 HALF-LIFE STATISTICS:
+--------------------------------------------------
+• Valid calculations: 24,224
+• Mean: 10.9871 hours
+• Median: 8.5700 hours
+• Standard deviation: 10.5827 hours
+• Minimum: 0.1366 hours
+• Maximum: 167.8390 hours
+
+📊 SPREAD STATISTICS:
+--------------------------------------------------
+• Number of observations: 168,057
+• Mean value: 11.328110
+• Standard deviation: 0.367224
+• Average hedge ratio: 0.572466
+• Std of hedge ratio: 0.494950
+
+📈 STRATEGY RECOMMENDATIONS:
+--------------------------------------------------
+✅ Median half-life: 8.57 hours
+   • Spread returns to mean in ~8.6 hours
+   • Recommended LOOKBACK_PERIOD: 205 (≈17.1 hours)
+   • Maximum time in position: 17.1 hours
+
+✅ Half-life < 12 hours - excellent for intraday trading
+
+================================================================================
+📊 CALCULATION DETAILS:
+================================================================================
+Method: AR(1) model for half-life calculation
+Formula: Half-life = -ln(2) / ln(1 + λ)
+Model: Δspread(t) = α + λ×spread(t-1) + ε(t)
+Stationarity criterion: ADF test (p-value < 0.10)
+Range filter: 0.1 ≤ half_life ≤ 168 hours
+================================================================================
